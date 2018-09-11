@@ -213,10 +213,8 @@ gulp.task('javascript:main', ((compiler) => {
         'process.env.SBF_PUBLIC_PATH': JSON.stringify(PUBLIC_PATH),
       })
     ];
-    if (isProd()) {
-      plugins.push(new webpack.optimize.UglifyJsPlugin({sourceMap: true}));
-    }
     return webpack({
+      mode: isProd() ? 'production' : 'development',
       entry: entry,
       output: {
         path: path.resolve(__dirname, DEST),
@@ -226,16 +224,18 @@ gulp.task('javascript:main', ((compiler) => {
       devtool: '#source-map',
       plugins,
       module: {
-        loaders: [{
+        rules: [{
           test: /\.js$/,
-          loader: 'babel-loader',
-          query: {
-            babelrc: false,
-            cacheDirectory: false,
-            presets: [
-              ['es2015', {'modules': false}],
-            ],
-          },
+          use: {
+            loader: 'babel-loader',
+            options: {
+              babelrc: false,
+              cacheDirectory: false,
+              presets: [
+                ['@babel/preset-env', {'modules': false}],
+              ],
+            },
+          }
         }],
       },
       performance: {hints: false},
@@ -256,6 +256,7 @@ gulp.task('javascript:polyfills', ((compiler) => {
   const createCompiler = () => {
     const entry = './assets/javascript/polyfills.js';
     return webpack({
+      mode: 'production',
       entry: entry,
       output: {
         path: path.resolve(__dirname, DEST),
@@ -263,7 +264,6 @@ gulp.task('javascript:polyfills', ((compiler) => {
         filename: path.basename(entry),
       },
       devtool: '#source-map',
-      plugins: [new webpack.optimize.UglifyJsPlugin({sourceMap: true})],
       performance: {hints: false},
       cache: {},
     });
