@@ -1,9 +1,9 @@
-# [Solved by Flexbox](https://hufan-akari.github.io/solved-by-flexbox/) 
-[![Build Status](https://travis-ci.org/hufan-akari/solved-by-flexbox.svg?branch=zh)](https://travis-ci.org/hufan-akari/solved-by-flexbox)
+# [Solved by Flexbox](https://magic-akari.github.io/solved-by-flexbox/) 
+[![Build Status](https://travis-ci.org/magic-akari/solved-by-flexbox.svg?branch=zh)](https://travis-ci.org/magic-akari/solved-by-flexbox)
 
 一组示例用于展示曾经难于或无法单独用 CSS 解决的问题, 现在使用 Flexbox 让问题迎刃而解.
 
-[点击查看](https://hufan-akari.github.io/solved-by-flexbox/)
+[点击查看](https://magic-akari.github.io/solved-by-flexbox/)
 
 ## 在本地查看示例
 
@@ -11,7 +11,7 @@ Solved by Flexbox 页面使用 [Node.js](http://nodejs.org/) 构建. 如果你�
 
 ```sh
 # 克隆这个 git 仓库并使用 cd 命令进入克隆的目录.
-git clone https://github.com/hufan-akari/solved-by-flexbox
+git clone https://github.com/magic-akari/solved-by-flexbox
 cd solved-by-flexbox
 
 # 安装依赖
@@ -33,7 +33,7 @@ npm start -- -p 8080
 
 下面的翻译由热心的社区提供:
 
-* [Chinese](https://hufan-akari.github.io/solved-by-flexbox/)
+* [Chinese](https://magic-akari.github.io/solved-by-flexbox/)
 * [Japanese](http://hashrock.github.io/solved-by-flexbox-ja/)
 * [Korean](https://hyunseob.github.io/solved-by-flexbox-kr/)
 

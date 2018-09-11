@@ -311,7 +311,7 @@ gulp.task('deploy', ['default', 'lint'], function() {
   sh.mkdir('_tmp');
   sh.cd('_tmp');
   sh.exec('git init');
-  sh.exec('git remote add origin https://github.com/hufan-akari/' + REPO + '.git');
+  sh.exec('git remote add origin https://github.com/magic-akari/' + REPO + '.git');
   sh.exec('git pull origin gh-pages');
 
   // Delete all the existing files and add
