@@ -42,7 +42,7 @@
     "shelljs": "^0.8.2",
     "suitcss-utils-display": "^1.0.2",
     "suitcss-utils-text": "^1.0.0",
-    "through2": "^2.0.3",
+    "through2": "^3.0.0",
     "webpack": "^4.18.0",
     "yargs": "^12.0.1"
   }
