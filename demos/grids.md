@@ -26,11 +26,11 @@ Flexbox 布局不仅结局了这些问题，还开启全新可能性的新世界
 <!-- Listed below are some of my criteria for an ideal grid system. Fortunately, with Flexbox we get most of these features for free. -->
 
 
-- 每一行里的每一个栅格默认都是同宽同高。默认自适应。
+- 每一行里的每一个栅格默认都是等宽等高。默认自适应。
 - 为了足够灵活，能够添加尺寸属性到单独的栅格中。没有添加的，仍然简单地平分剩下的可用空间。
 - 支持响应式布局，可以添加媒体查询到栅格中。
-- 每一个栅格可以在垂直方向上置顶，置底，剧中。
-- 如果让所有栅格拥有一致的大小和对其方式，在容器上添加属性，子元素能够继承，而不需要无意义的重复。
+- 每一个栅格可以在垂直方向上置顶，置底，居中。
+- 如果让所有栅格拥有一致的大小和对齐方式，在容器上添加属性，子元素能够继承，而不需要无意义的重复。
 - 栅格能够任意的嵌套。
 <!-- - By default, each grid cell is the same width and height as every other cell in the row. Basically they all size to fit by default.
 - For finer control, you can add sizing classes to individual cells. Without these classes, the cells simply divide up the available space as usual.
@@ -42,7 +42,7 @@ Flexbox 布局不仅结局了这些问题，还开启全新可能性的新世界
 ### 基础栅格系统
 <!-- ### Basic Grids -->
 
-下面的栅格没有指定特定的宽度，它们自然的平分每一行的空间并撑满每一个行，并且高度默认都是相同的。
+下面的栅格没有指定特定的宽度，它们自然的平分每一行的空间并撑满每一个行，并且高度默认都是相等的。
 <!-- The grid cells below do not specify any widths, they just naturally space themselves equally and expand to fit the entire row. They're also equal height by default. -->
 
 <div class="Grid Grid--gutters u-textCenter">
@@ -199,7 +199,7 @@ Flexbox 布局不仅结局了这些问题，还开启全新可能性的新世界
   </div>
 </div>
 
-## 对其特性
+## 对齐特性
 <!-- ## Alignment Features -->
 
 ### 置顶对齐栅格
