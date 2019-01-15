@@ -23,7 +23,7 @@
     "core-js": "^2.4.1",
     "del": "^3.0.0",
     "front-matter": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-cssnext": "^1.0.1",
     "gulp-eslint": "^5.0.0",
     "gulp-htmlmin": "^5.0.1",
