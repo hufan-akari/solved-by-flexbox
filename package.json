@@ -9,8 +9,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gulp",
-    "start": "gulp serve",
-    "deploy": "gulp clean && gulp deploy"
+    "start": "gulp serve"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

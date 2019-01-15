@@ -16,7 +16,6 @@ const assign = require('object-assign');
 const path = require('path');
 const Remarkable = require('remarkable');
 const serveStatic = require('serve-static');
-const sh = require('shelljs');
 const through = require('through2');
 const webpack = require('webpack');
 const {argv} = require('yargs');
@@ -278,56 +277,23 @@ gulp.task('javascript:polyfills', ((compiler) => {
 })());
 
 
-gulp.task('javascript', ['javascript:main', 'javascript:polyfills']);
+gulp.task('javascript', gulp.parallel('javascript:main', 'javascript:polyfills'));
 
 
 gulp.task('clean', function(done) {
-  del(DEST, done);
+  del(DEST).then(() => done());
 });
 
 
-gulp.task('default', ['css', 'images', 'javascript', 'pages']);
+gulp.task('default',  gulp.parallel('css', 'images', 'javascript', 'pages'));
 
 
-gulp.task('serve', ['default'], function() {
+gulp.task('serve', gulp.series('default', function() {
   let port = argv.port || argv.p || 4000;
   connect().use(serveStatic(DEST)).listen(port);
 
-  gulp.watch('./assets/css/**/*.css', ['css']);
-  gulp.watch('./assets/images/*', ['images']);
-  gulp.watch('./assets/javascript/*', ['javascript']);
-  gulp.watch(['*.html', './demos/*', './templates/*'], ['pages']);
-});
-
-
-gulp.task('deploy', ['default', 'lint'], function() {
-  if (process.env.NODE_ENV != 'production') {
-    throw new Error('Deploying requires NODE_ENV to be set to production');
-  }
-
-  // Create a tempory directory and
-  // checkout the existing gh-pages branch.
-  sh.rm('-rf', '_tmp');
-  sh.mkdir('_tmp');
-  sh.cd('_tmp');
-  sh.exec('git init');
-  sh.exec('git remote add origin https://github.com/magic-akari/' + REPO + '.git');
-  sh.exec('git pull origin gh-pages');
-
-  // Delete all the existing files and add
-  // the new ones from the build directory.
-  sh.rm('-rf', './*');
-  sh.cp('-rf', path.join( DEST, '/*'), './');
-  sh.exec('git add -A');
-
-  // Commit and push the changes to
-  // the gh-pages branch.
-  sh.exec('git commit -m "Deploy site"');
-  sh.exec('git branch -m gh-pages');
-  sh.exec('git push origin gh-pages');
-
-  // Clean up.
-  sh.cd('..');
-  sh.rm('-rf', '_tmp');
-  sh.rm('-rf', DEST);
-});
+  gulp.watch('./assets/css/**/*.css', gulp.parallel('css'));
+  gulp.watch('./assets/images/*', gulp.parallel('images'));
+  gulp.watch('./assets/javascript/*', gulp.parallel('javascript'));
+  gulp.watch(['*.html', './demos/*', './templates/*'], gulp.parallel('pages'));
+}));
