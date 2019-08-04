@@ -101,5 +101,5 @@ excerpt: 创建全宽度，流式的输入/按钮组在 CSS 的历史中几乎�
 
 ```
 
-在 Github 中查看这个 demo 中完整的输入附加组件 [源代码](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/input-add-on.css)
+在 Github 中查看这个 demo 中完整的输入附加组件 [源代码](https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/input-add-on.css)
 <!-- View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/input-add-on.css) for the `InputAddOn` component used in this demo on Github. -->

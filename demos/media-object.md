@@ -176,5 +176,5 @@ excerpt: 创建含有固定或变化的头像的媒体对象，不用担心溢�
 }
 ```
 
-在 Github 中查看这个 demo 中完整的媒体对象组件 [源代码](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/media.css)
+在 Github 中查看这个 demo 中完整的媒体对象组件 [源代码](https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/media.css)
 <!-- View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/media.css) for the `Media` component used in this demo on Github. -->

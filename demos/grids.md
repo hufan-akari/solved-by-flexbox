@@ -406,5 +406,5 @@ Flexbox 布局不仅结局了这些问题，还开启全新可能性的新世界
 }
 ```
 
-在 Github 中查看这个 demo 中完整的栅格组件 [源代码](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css)
+在 Github 中查看这个 demo 中完整的栅格组件 [源代码](https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/grid.css)
 <!-- View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css) for the `Grid` component used in this demo on Github. -->

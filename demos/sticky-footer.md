@@ -50,10 +50,10 @@ Flexbox 布局可以完美解决这类问题。众所周知， Flexbox 布局经
 }
 ```
 
-在 Github 中查看这个 demo 中完整的粘性页脚组件 [源代码](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css)
+在 Github 中查看这个 demo 中完整的粘性页脚组件 [源代码](https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/site.css)
 <!-- View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css) for the `Site` component used in this demo on Github. -->
 
-<aside class="Notice"><strong>注意:</strong>&nbsp; 该 demo 的 CSS 代码需要轻微修改才能跨浏览器工作。参考 <a href="https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css">源代码的注释</a>。</aside>
+<aside class="Notice"><strong>注意:</strong>&nbsp; 该 demo 的 CSS 代码需要轻微修改才能跨浏览器工作。参考 <a href="https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/site.css">源代码的注释</a>。</aside>
 <!-- <aside class="Notice"><strong>Note:</strong>&nbsp; the CSS required to make this demo work cross-browser is slightly different from the CSS shown in the example above, which assumes a fully spec-compliant browser. See the <a href="https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css">comments in the source</a> for more details.</aside> -->
 
 </div>

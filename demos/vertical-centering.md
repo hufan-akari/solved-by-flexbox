@@ -78,8 +78,8 @@ excerpt: 这个经典的问题一直被 CSS hackers 挑战了很多年，历史�
 }
 ```
 
-在 Github 中查看这个 demo 中完整的垂直居中组件 [源代码](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/aligner.css)
+在 Github 中查看这个 demo 中完整的垂直居中组件 [源代码](https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/components/aligner.css)
 <!-- View the full [source](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/aligner.css) for the `Aligner` component used in this demo on Github. -->
 
-<aside class="Notice"><strong>注意:</strong>&nbsp; 该 demo 的 CSS 代码需要轻微修改才能跨浏览器工作。参考 <a href="https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/utils/compat.css">源代码的注释</a>。</aside>
+<aside class="Notice"><strong>注意:</strong>&nbsp; 该 demo 的 CSS 代码需要轻微修改才能跨浏览器工作。参考 <a href="https://github.com/magic-akari/solved-by-flexbox/blob/master/assets/css/utils/compat.css">源代码的注释</a>。</aside>
 <!-- <aside class="Notice"><strong>Note:</strong>&nbsp; the markup and CSS required to make this demo work cross-browser is slightly different from what's shown in the examples above, which assume a fully spec-compliant browser. See the <a href="https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/utils/compat.css">comments in the source</a> for more details.</aside> -->
