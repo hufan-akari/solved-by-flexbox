@@ -1,26 +1,16 @@
-<script src="{{ site.baseUrl }}main.js"></script>
+<script>
+    (function() {
+        var style = document.body.style;
+        var supportsFlexbox = "flexBasis" in style || "msFlexAlign" in style || "webkitBoxDirection" in style;
 
-{% if site.env == 'dev' %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.js"></script>
-  <script>
-    HTMLInspector.rules.extend('unused-classes', function(config) {
-      config.whitelist = config.whitelist.concat([
-        /^icon/,
-        /^wf-/,
-        /^hljs-/,
-        /^twitter-/
-      ]);
-      return config;
-    })
+        if (!supportsFlexbox) {
+            var div = document.createElement("div");
+            div.className = "Error";
+            div.innerHTML = "Your browser does not support Flexbox.  " + "Parts of this site may not appear as expected.";
 
-    HTMLInspector.rules.extend('script-placement', function(config) {
-      config.whitelist = config.whitelist.concat([
-        '[async]',
-        '.js-allow-before-footer'
-      ]);
-      return config;
-    });
+            document.body.insertBefore(div, document.body.firstChild);
+        }
+    })();
+</script>
 
-    HTMLInspector.inspect({excludeElements: ['svg', 'iframe']});
-  </script>
-{% endif %}
+<script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>

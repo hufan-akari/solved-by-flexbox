@@ -10,6 +10,6 @@ deploy:
 - provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
-  local-dir: build
+  local-dir: solved-by-flexbox
   on:
     branch: zh

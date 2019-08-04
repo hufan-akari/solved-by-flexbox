@@ -8,18 +8,14 @@
   <meta name="MobileOptimized" content="320">
   <meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="{{ site.description }}">
-  <meta name="google-site-verification" content="q5KncOje-dNdD5uxqSOG1znSAo5Wsz5MlBcAmteQAJA" />
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 
   <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
   <link href="{{ site.baseUrl }}main.css" rel="stylesheet" type="text/css">
 
+  <!-- FID polyfill -->
   <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  window.onerror=function fn(){fn.q=fn.q||[];fn.q.push(arguments)};
-  </script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-
+  !function(n,e){var t,o,i,c=[],f={passive:!0,capture:!0},r=new Date,a="pointerup",u="pointercancel";function p(n,c){t||(t=c,o=n,i=new Date,w(e),s())}function s(){o>=0&&o<i-r&&(c.forEach(function(n){n(o,t)}),c=[])}function l(t){if(t.cancelable){var o=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?function(t,o){function i(){p(t,o),r()}function c(){r()}function r(){e(a,i,f),e(u,c,f)}n(a,i,f),n(u,c,f)}(o,t):p(o,t)}}function w(n){["click","mousedown","keydown","touchstart","pointerdown"].forEach(function(e){n(e,l,f)})}w(n),self.perfMetrics=self.perfMetrics||{},self.perfMetrics.onFirstInputDelay=function(n){c.push(n),s()}}(addEventListener,removeEventListener);
+</script>
 </head>
