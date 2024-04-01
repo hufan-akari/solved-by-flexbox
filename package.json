@@ -25,7 +25,7 @@
     "markdown-it": "^9.0.1",
     "normalize.css": "^8.0.1",
     "nunjucks": "^3.2.0",
-    "postcss": "^7.0.17",
+    "postcss": "^8.0.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
     "serve-static": "^1.14.1",
